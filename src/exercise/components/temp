@@ -1,0 +1,25 @@
+<template>
+  <div class="bottom-wrapper">
+  </div>
+</template>
+
+<script type="text/babel">
+  export default {
+    name: 'bottom-component',
+    data() {
+        return {
+        }
+    },
+    props: {
+    },
+    watch: {
+    },
+    methods: {
+    },
+    mounted () {
+    }
+  }
+</script>
+<style lang="less" scoped>
+
+</style>

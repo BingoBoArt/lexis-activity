@@ -1,0 +1,82 @@
+.loading-wrapper{
+    display:none;
+}
+.loading-state-wrapper{
+    position:relative;
+    .loading-mask{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.4);
+        position: fixed;
+        z-index:999;
+        top: 0;
+        left: 0;
+    }
+    >.loading-wrapper{
+        width:144px;
+        height:144px;
+        text-align: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        display:block;
+        background:url('./images/loading_bg_paozhi.png') no-repeat;
+        background-size:contain;
+
+        .loading-pic{
+            width:100px;
+            height:100px;
+            background:url('./images/loading_quan.png') no-repeat;
+            background-size:contain;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            margin-top:-50px;
+            margin-left:-50px;
+            animation: loading-animate 1.2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            transform:translateZ(0);
+        }
+
+        &.loading-wrapper-area{
+            width:60px;
+            height:60px;
+            background: url('./images/loading_logo.png') center center no-repeat;
+            background-size: 21px 28px;
+            .loading-pic{
+                width:58px;
+                height:58px;
+                margin-top:-29px;
+                margin-left:-29px;
+                background:url('./images/loading_small_quan.png') no-repeat;
+                background-size:contain;
+            }
+        }
+    }
+    >.loading-wrapper-area{
+        position:absolute;
+    }
+    >.loading-wrapper-mask{
+        z-index:1000;
+    }
+}
+.btn-loading-state{
+    position:relative;
+    &:after{
+        position:absolute;
+        content: " ";
+        top:50%;
+        background: url('./images/rolling.gif') no-repeat;
+        background-size: contain;
+        width:26px;
+        height:26px;
+        margin-left: 10px;
+        margin-top:-13px;
+    }
+}
+@keyframes loading-animate{
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}

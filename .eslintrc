@@ -1,0 +1,49 @@
+// http://eslint.org/docs/user-guide/configuring
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "jquery": true, // 否则$会报undef
+    "es6": true
+  },
+  "globals": {
+    "_isDev_": false,
+    "_isTest_": false,
+    "_isPro_": false
+  },
+  "extends": "standard",
+  "plugins": [
+    "html" // required to lint *.vue files
+  ],
+  "rules": {
+    //http://eslint.org/docs/rules/keyword-spacing
+    //http://eslint.org/docs/rules/xxx
+    "arrow-parens": 0, // allow paren-less arrow functions
+    "generator-star-spacing": 0, // allow async-await
+    "indent": 0, //缩进检测
+    "quotes": 0, //强制使用单引号定义字符串
+    "space-before-blocks": 0, //块区域检测空格
+    "semi": 0, //多余;号检测
+    "keyword-spacing": 0, //关键字前后是否需要空格
+    "spaced-comment": 0, //注释//符号后边是否需要空格
+    "space-before-function-paren": 0, //函数参数前后是否需要空格
+    "camelcase": 0, //定义变量是否需要驼峰法
+    "space-infix-ops": 2, //操作符左右是否需要空格，开启
+    "eqeqeq": 0, //强制使用===
+    "no-multiple-empty-lines": 0, // 空行
+    "no-trailing-spaces": 0, // 结尾多余空格
+    "no-unused-vars": 0, // 验证未使用变量
+    "comma-dangle": 0,
+    "eol-last": 0,
+    "padded-blocks": 0,
+    "handle-callback-err": 0,
+    "one-var": 0,
+    "no-sequences": 0,
+    "no-new-func": 0,
+    "new-cap": 0
+  }
+}

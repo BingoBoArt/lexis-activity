@@ -1,0 +1,91 @@
+/*weui样式修改*/
+.weui-toptips {
+  font-size: 30px;
+  height: 50px;
+  line-height: 50px;
+  padding: 5px;
+}
+.weui-icon_toast.weui-loading {
+  margin-top: 100px;
+  width: 40px;
+  height: 40px;
+}
+.weui-agree__text {
+  display: inline-block;
+}
+.weui-agree {
+  font-size: 30px;
+}
+.weui-agree__checkbox {
+  width: 30px;
+  height: 30px;
+}
+.weui-agree__checkbox:checked:before {
+  font-size: 30px;
+}
+.weui-picker__hd {
+  font-size: 30px;
+}
+.weui-picker__item {
+  height: 38px;
+}
+.weui-dialog {
+  max-width: 550px !important;
+}
+.weui-dialog .weui-dialog__ft {
+  font-size: 30px;
+  line-height: 80px;
+}
+/*
+.weui-dialog__bd {
+    font-size: 35px;
+}
+*/
+.weui-btn_primary {
+  background: #3c6be0;
+}
+.weui-btn_primary:not(.weui-btn_disabled):active {
+  background: #3c6be0;
+}
+.btn2:not(.weui-btn_disabled):active {
+  background: #d4aa0f;
+}
+.weui-actionsheet__cell {
+  font-size: 30px;
+}
+.weui-toast {
+  width: 380px;
+  min-height: 270px;
+  left: 50%;
+  margin-left: -190px;
+}
+.weui-icon_toast.weui-icon-success-no-circle:before {
+  font-size: 70px;
+}
+.weui-toast__content {
+  margin-top: 30px;
+  font-size: 38px;
+}
+.weui-icon_toast.weui-loading {
+  margin-top: 60px;
+  width: 83px;
+  height: 83px;
+}
+.weui-icon_toast {
+  margin: 60px 0 0;
+}
+.weui-agree__checkbox:checked:before {
+  color: #3c6be0;
+}
+.btn_loading .weui-loading {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  right: 60px;
+  top: 15px;
+  border: none;
+}
+.weui-actionsheet__cell {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 20px 0;
+}
